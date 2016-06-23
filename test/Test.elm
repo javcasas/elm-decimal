@@ -1,3 +1,5 @@
+module Main exposing (..)
+
 import Data.Decimal exposing (..)
 import Maybe exposing (Maybe, andThen)
 import ElmTest exposing (..)
@@ -209,6 +211,6 @@ allTests =
         , (Check.Test.evidenceToTest (quickCheck qcCompare))
         ]
 
-main : Element
+
 main = 
-    elementRunner allTests
+    runSuiteHtml allTests
