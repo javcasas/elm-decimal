@@ -1,4 +1,4 @@
-module Data.Decimal
+module Data.Decimal exposing
     ( Decimal
     , fromInt
     , fromIntWithExponent
@@ -26,7 +26,7 @@ module Data.Decimal
     , truncate
     , round
     , getDigit
-    ) where
+    )
 
 
 {-|
